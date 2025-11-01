@@ -1,0 +1,49 @@
+.list-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-list,
+.member-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-row,
+.member-row {
+  background: #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-row.done {
+  opacity: 0.65;
+  text-decoration: line-through;
+}
+
+/* styl pro "add" řádky */
+.add-row {
+  background: #d1d5db;
+}
+
+.add-input {
+  flex: 1;
+  border: none;
+  background: #d1d5db;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.add-input::placeholder {
+  color: #6b7280;
+}
