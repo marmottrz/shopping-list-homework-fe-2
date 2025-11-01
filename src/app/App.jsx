@@ -5,11 +5,9 @@ import logo from "../assets/logo.svg";
 export default function App() {
   return (
     <div className="app">
-      {/* Sidebar */}
       <aside className="sidebar">
         <img src={logo} alt="Logo" className="logo" />
 
-        {/* Odkaz na aktivní seznamy */}
         <NavLink
           to="/lists"
           className={({ isActive }) => (isActive ? "nav active" : "nav")}
@@ -17,7 +15,6 @@ export default function App() {
           🛒 My lists
         </NavLink>
 
-        {/* Odkaz na archivované seznamy — odstraněna “hlava”, nahrazena 🧺 */}
         <NavLink
           to="/archived"
           className={({ isActive }) => (isActive ? "nav active" : "nav")}
@@ -26,7 +23,6 @@ export default function App() {
         </NavLink>
       </aside>
 
-      {/* Hlavní obsah */}
       <main className="content">
         <Outlet />
       </main>
